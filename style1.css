@@ -1,0 +1,244 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-size: 1.5vw;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+body > header {
+    background-color: rgb(211, 131, 177);
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stack logo and nav vertically */
+    align-items: center;    /* Center items horizontally */
+    padding: 10px 0;        /* Add some padding for spacing */
+}
+
+#Name {
+    font-family: 'Sofia';
+    font-size: 200%;
+}
+
+#logo {
+    margin: 0;
+    padding: 8px;
+    font-family: 'Sofia', cursive;
+    text-align: center;
+    width: 85%;
+    border-radius: 20%;
+    text-shadow:
+        1px 1px 0px black,
+        -1px 1px 0px black, 
+        1px -1px 0px black, 
+        -1px -1px 0px black;
+    font-size: 300%;
+}
+
+ul {
+    margin: 0;
+}
+
+#nav-ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#nav-ul > li {
+    padding: 8px;
+    margin: 16px;
+}
+
+.navbutton {
+    color: rgb(207, 114, 167);
+    text-decoration: none;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 15%;
+    background-color: rgb(246, 214, 232);
+}
+
+.recipe-image {
+    text-align: center;
+    border-radius: 10%;
+}
+
+.recipe-description {
+    font-family: 'Sofia';
+    text-align: center;
+}
+
+/* Recipe details section */
+.recipe-details {
+    margin: 20px 0;
+    text-align: center; /* Center-aligns text within the section */
+}
+
+/* Ingredients grid layout */
+.ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column size */
+    gap: 10px; /* Space between grid items */
+    justify-content: center; /* Center the grid items horizontally within the container */
+    max-width: 100%; /* Ensure the grid container doesn't exceed the width of its parent */
+    margin: 0 auto; /* Center the grid container horizontally */
+}
+
+/* Individual ingredient item */
+.ingredient-item {
+    background-color: rgb(246, 214, 232);
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-aligns text within each ingredient item */
+}
+
+/* Main content styles */
+#main-content {
+    display: flex;
+    padding: 20px;
+}
+
+.instructions {
+    max-width: 1000px; /* Maximum width for the container */
+    margin: auto; /* Center the container horizontally */
+    padding: 20px; /* Padding inside the container */
+}
+
+.instructions h3 {
+    text-align: center; /* Center the header text */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.instruction-box {
+    border: 1px solid #ccc; /* Light border around each instruction box */
+    border-radius: 8px; /* Rounded corners for each box */
+    padding: 15px; /* Space inside each box */
+    margin-bottom: 15px; /* Space between each box */
+    background-color: rgb(246, 214, 232); /* Light background color for each box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+
+body > main article {
+    width: 70%;
+    margin: auto;
+}
+
+#main-content aside {
+    width: 20%;
+    padding: 20px;
+}
+
+.recipe-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Container to center the form */
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 5vh; /* Full viewport height */
+    padding: 0 20px; /* Padding on left and right */
+}
+
+/* Styling for the form */
+form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally within the form */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 100%; /* Ensure form takes full width available */
+    max-width: 200px; /* Set a max-width for the form */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Styling for form labels */
+form label {
+    margin-bottom: 10px; /* Space between labels */
+}
+
+/* Styling for form inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    margin-bottom: 10px; /* Space between inputs */
+    padding: 8px;
+    width: 100%; /* Make inputs fill the form width */
+    max-width: 100%; /* Ensure inputs do not exceed form width */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Styling for the checkbox and its label */
+form input[type="checkbox"] {
+    margin-bottom: 20px; /* Space below the checkbox */
+}
+
+/* Styling for the submit button */
+form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.pie-image {
+    text-align: center;
+    border-radius: 10%;
+}
+
+/* Footer styles */
+body > footer {
+    background-color: rgb(211, 131, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer h2 {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Sofia';
+}
+
+img {
+    border-radius: 15%;
+}
+
+#footer-ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-ul > div > li {
+    margin-left: 12px;
+}
+
+#footer-ul > div > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer-ul > div > li > a:hover {
+    text-decoration: underline;
+}
+
+#logo-again {
+    text-align: left;
+}
